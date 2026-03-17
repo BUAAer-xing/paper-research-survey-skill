@@ -1,0 +1,36 @@
+{
+    "mcpServers": {
+        "arxiv-mcp-server": {
+            "command": "uv",
+            "args": [
+                "--directory",
+                "<PROJECT_ROOT>/mcp/arxiv-mcp-server",
+                "run",
+                "arxiv-mcp-server",
+                "--storage-path",
+                "<PROJECT_ROOT>/mcp/arxiv-mcp-server/storages"
+            ]
+        },
+        "semantic-scholar-mcp-server": {
+            "command": "uv",
+            "args": [
+                "--directory",
+                "<PROJECT_ROOT>/mcp/semantic-scholar-mcp-server",
+                "run",
+                "server.py"
+            ],
+            "env": {
+                "SEMANTIC_SCHOLAR_API_KEY": "<YOUR_API_KEY>"
+            }
+        },
+        "google-scholar-mcp-server": {
+            "command": "uv",
+            "args": [
+                "--directory",
+                "<PROJECT_ROOT>/mcp/google-scholar-mcp-server",
+                "run",
+                "google_scholar_server.py"
+            ]
+        }
+    }
+}
