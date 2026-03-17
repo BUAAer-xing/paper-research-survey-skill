@@ -52,7 +52,7 @@ cd paper-research-survey-skill
 bash mcp/start_all.sh
 ```
 
-然后将 `.mcp.json.example` 复制为 `.mcp.json`，替换路径和 API Key：
+然后将 `.mcp.json.example` 复制为 `.mcp.json`，并**将其放在项目目录下**，替换路径和 API Key：
 
 ```bash
 cp .mcp.json.example .mcp.json
